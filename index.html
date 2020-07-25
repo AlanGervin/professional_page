@@ -2,38 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ 
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
     
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
     <title>Alan Gervin Web Enterprises</title>
 </head>
 <body>
 
   <!-- A grey horizontal navbar that becomes vertical on small screens -->
-  <nav class="navbar navbar-expand-sm bg-light">
-
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark ml-md-auto">
+    
+    <button id="menu" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+      
+      
     <!-- Links -->
-    <ul class="nav nav-pills" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#hobbies">Hobbies</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#resume">Resume</a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul  class="navbar-nav nav nav-pills" role='tablist'>
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="pill" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="flase">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="project-tab" data-toggle="pill" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="hobbies-tab" data-toggle="pill" href="#hobbies" role="tab" aria-controls="hobbies" aria-selected="false">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Resume-tab" data-toggle="pill" href="#resume" role="tab" aria-controls="resume" aria-selected="false">Resume</a>
+        </li>
+      </ul>
+    </div>
+  
   </nav>
   <section>
     <h1 class='title'>Welcome to Alan Gervin Web Enterprises</h1>
@@ -41,7 +52,7 @@
     
      <!-- Tab panes -->
     <div class="tab-content">
-      <div id="home" class="container tab-pane active"><br>
+      <div id="home" class="container tab-pane show active"><br>
         <h3>Home</h3>
         <p>This is a professional webpage built and maintained by Alan Gervin to showcase the skills I have learned through codecademy.com</p>
       </div>
@@ -68,7 +79,7 @@
 
       <div id="hobbies" class="container tab-pane fade"><br>
         <h3>Hobbies</h3>
-        <p>When I'm not studying hard my hobbies inclue slacklining, spinning poi, and trying to advance my tetris skills.</p>
+        <p>When I'm not studying hard my hobbies include slacklining, spinning poi, and trying to advance my tetris skills.</p>
         <p>//insert poi spinning video</p>
       </div>
 

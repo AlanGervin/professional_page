@@ -5,8 +5,14 @@
     overflow:initial;
     border-radius: 4px;
 }
+#spaceholder {
+    height:30px;
+}
 #resume {
     height:800px;
+}
+#resumeHolder {
+    border-bottom:20px;
 }
 
 body {

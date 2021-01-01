@@ -20,6 +20,7 @@ body {
 }
 
 .title {
+    margin:auto;
     text-align:center;
     font-family: 'Roboto Condensed', sans-serif;
 }

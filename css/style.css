@@ -19,8 +19,11 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+h1 {
+    display:block
+}
 .title {
-    margin:auto;
+    align:center;
     text-align:center;
     font-family: 'Roboto Condensed', sans-serif;
 }
